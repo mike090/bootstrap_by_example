@@ -160,3 +160,8 @@ section#newsletter form {
   margin-top: 2em;
   margin-bottom: 5.5em;
 }
+
+section#contact form {
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+}
