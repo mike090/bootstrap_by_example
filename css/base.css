@@ -165,3 +165,7 @@ section#contact form {
   padding-top: 9rem;
   padding-bottom: 3rem;
 }
+
+.hidden-element {
+  display: none;
+}

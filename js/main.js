@@ -13,4 +13,9 @@ $(document).ready(function() {
           $button.after('<span>Message sent. We will contact you soon.</span>');
         }
     });
+
+    $('#sign-btn').on('click', function(e) {
+      $(e.currentTarget).closest('ul').hide();
+      $('form#signin').fadeIn('fast');
+    });
 });
