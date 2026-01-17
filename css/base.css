@@ -1,3 +1,15 @@
+body {
+  padding-top: 3.6em;
+}
+
+nav .btn-group {
+  margin: 0.8rem 2rem;
+}
+
+#nav-menu {
+  margin-right: 1rem;
+}
+
 .nowrap {
   white-space: nowrap;
 }
@@ -10,6 +22,12 @@
   table .btn {
     font-size: 0.75rem;
     font-size: 3.5vw;
+  }
+
+  nav .btn-group {
+    position: absolute;
+    top: 0;
+    right: 4em;
   }
 }
 
