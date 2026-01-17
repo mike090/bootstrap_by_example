@@ -1,0 +1,19 @@
+.wrapping-flex {
+  display: -webkit-flex;
+  display: flex;
+  background-color: #CCC;
+  height: 12rem;
+  width: 50%;
+  margin-left: 20%;
+}
+
+.wrapping-flex > div {
+  background-color: #ECA45A;
+  margin: 1rem;
+  padding: 1.5rem;
+}
+
+.wrapping-flex .item2 {
+  align-self: center;
+  height: 5rem;
+}
