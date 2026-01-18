@@ -304,3 +304,13 @@ dev#app-info {
 .alert {
   border-left-width: 0.5rem;
 }
+
+@keyframes w70 {
+  from { width: 0%; }
+  to { width: 70%; }
+}
+
+.progress-bar.active {
+  animation: w70 1s ease forwards,
+             progress-bar-stripes 2s linear infinite;
+}
