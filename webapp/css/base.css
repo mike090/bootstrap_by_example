@@ -295,3 +295,12 @@ div#who-follow li .info .glyphicon {
 dev#app-info {
   margin-top: 2rem;
 }
+
+.alert h3 {
+  margin: 0 0 1rem;
+  font-size: 1.4em;
+}
+
+.alert {
+  border-left-width: 0.5rem;
+}
