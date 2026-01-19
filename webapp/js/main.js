@@ -9,4 +9,6 @@ $(document).ready(function() {
 
     $charCount.html(maxCharCount - tweetLength);
   });
+
+  $('[data-toggle="tooltip"]').tooltip();
 });
