@@ -36,4 +36,12 @@ $(document).ready(function() {
     $icon.removeClass('glyphicon-plus').addClass('glyphicon-ok');
     $(this).append('ing');
   });
+
+  $('#profile').on('affix.bs.affix', function() {
+    $(this).width($(this).width() - 1);
+    $('#main').addClass('col-md-offset-3');
+  }).on('affix-top.bs.affix', function() {
+    $(this).css('width', '');
+    $('#main').removeClass('col-md-offset-3');
+  });
 });
