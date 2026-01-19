@@ -314,3 +314,7 @@ dev#app-info {
   animation: w70 1s ease forwards,
              progress-bar-stripes 2s linear infinite;
 }
+
+.row .card + .card {
+  margin-top: 2rem;
+}
