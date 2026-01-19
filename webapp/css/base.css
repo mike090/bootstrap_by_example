@@ -318,3 +318,11 @@ dev#app-info {
 .row .card + .card {
   margin-top: 2rem;
 }
+
+#tweet-modal .char-count {
+  padding: 0.7rem 0;
+}
+
+#tweet-modal textarea {
+  resize: none;
+}
