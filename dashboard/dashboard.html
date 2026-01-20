@@ -6,6 +6,7 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/switchery.min.css">
 </head>
 <body>
 
@@ -162,7 +163,7 @@
       </div>
 
       <div id="main" class="col-sm-offset-3 col-md-9">
-        
+
         <div class="card" id="pie-charts">
           <div class="card-block">
             <h2>Overall analysis</h2>
@@ -201,7 +202,61 @@
           </div>
         </div>
 
+        <div class="card" id="ration-stock">
+          <div class="card-block">
+            <h2>Ration stock info</h2>
+            <div class="stacked-area"></div>
+            <div class="switch">
+              View main stock
+              <input type="checkbox" class="switchery" checked>
+              <div class="clearfix"></div>
+            </div>
+            <div class="switch">
+              Hide empty stocks
+              <input type="checkbox" class="switchery">
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="real-time">
+          <div class="card-block">
+            <h2>Real time information</h2>
+            <ul class="list-unstyled">
+              <li>
+                Active dogs:
+                <span class="label label-warning pull-right">255</span>
+              </li>
+              <li>
+                Silo status:
+                <span class="badge ok pull-right">
+                  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                </span>
+              </li>
+              <li>
+                Usage level:
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                    <span class="sr-only">25%</span>
+                  </div>
+                  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                    <span class="sr-only">38% allocated</span>
+                  </div>
+                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
+                    <span class="sr-only">5% reserved</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                Free space:
+                <span id="free-space" class="pull-right"> 32%</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
+
 
     </div>
   </div>
@@ -211,6 +266,7 @@
   <script src="js/jquery.easypiechart.min.js"></script>
   <script src="js/highcharts.js"></script>
   <script src="js/highcharts-more.js"></script>
+  <script src="js/switchery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
