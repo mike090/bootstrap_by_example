@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('.loading').remove();
+
   $('[data-toggle="tooltip"]').tooltip();
 
   $('.round-chart').easyPieChart({
