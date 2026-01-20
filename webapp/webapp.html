@@ -42,7 +42,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" role="button" data-toggle="modal" data-target="#messages-modal">
               <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
               Messages
             </a>
@@ -467,6 +467,60 @@
           <button type="button" class="btn btn-primary">
             Tweet
           </button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="modal fade" id="messages-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">Dog messages</h4>
+          <button type="button" class="btn btn-primary btn-message">New message</button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">
+                <img src="imgs/laika.jpg" class="img-circle">
+                <div class="msg-content">
+                  <h5>Laika <small>@spacesog</small></h5>
+                  <p>Hey Jonny, how is down there?</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="imgs/doge.jpg" class="img-circle">
+                <div class="msg-content">
+                  <h5>Doge <small>@dogeoficial</small></h5>
+                  <p>Wow! How did I turned in to a meme?</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="imgs/cat.jpg" class="img-circle">
+                <div class="msg-content">
+                  <h5>Cat <small>@crazycat</small></h5>
+                  <p>You will never catch me!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="imgs/laika.jpg" class="img-circle">
+                <div class="msg-content">
+                  <h5>Laika <small>@spacesog</small></h5>
+                  <p>I think I saw you in Jupiter! Have you been there resently?</p>
+                </div>
+              </a>
+            </li> 
+          </ul>
         </div>
       </div>
     </div>
