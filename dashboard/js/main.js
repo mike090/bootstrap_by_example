@@ -190,4 +190,8 @@ $(document).ready(function() {
       $('form#search').slideUp('fast');
     }
   });
+
+  // $('#content').scrollspy({
+  //   target: '#content-spy'
+  // });
 });

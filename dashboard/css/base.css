@@ -418,6 +418,11 @@ nav #nav-menu {
   background-color: #e5e5e5;
 }
 
+#content {
+    height: 30em;
+    overflow: auto;
+}
+
 @media(max-width:48em){
   #nav-menu {
     float: none;
