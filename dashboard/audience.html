@@ -89,7 +89,7 @@
               </div>
             </li>
             <li class="visible-xs">
-              <a href="audience.html">Audience</a>
+              <a href="#">Audience</a>
             </li>
             <li class="visible-xs">
               <a href="#">Finances</a>
@@ -148,7 +148,7 @@
             </a>
           </li>
           <li>
-            <a href="audience.html" class="transition">
+            <a href="#" class="transition">
               <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
               Audience
             </a>
@@ -188,105 +188,49 @@
       </div>
 
       <div id="main" class="col-sm-offset-3 col-md-9">
-
-        <div class="card" id="pie-charts">
-          <div class="card-block">
-            <h2>Overall analysis</h2>
-            <div class="round-chart" data-percent="42">
-              <span>
-                42 <small>%<br>recurring</small>
-              </span>
+        <div id="carousel-notification" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            
+            <div class="item active">
+              <img src="imgs/doge.jpg" width="512">
+              <div class="carousel-caption">
+                <h3>Doge said:</h3>
+                <p>What are you doing? So scare. It's alright now.</p>
+              </div>
             </div>
-            <div class="round-chart" data-percent="87">
-              <span>
-                87 <small>% <br>aware</small>
-              </span>
+
+            <div class="item">
+              <img src="imgs/cat.jpg" width="512">
+              <div class="carousel-caption">
+                <h3>Crazy cat said:</h3>
+                <p>I will never forgive you...</p>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="card" id="quick-info">
-          <div class="card-block">
-            <h2>Quick stats</h2>
-            <div class="quick-stats">
-              <strong>Today:</strong>
-              <span>78</span>
+            <div class="item">
+              <img src="imgs/laika.jpg" width="512">
+              <div class="carousel-caption">
+                <h3>Laika said:</h3>
+                <p>Hey! How are you?</p>
+              </div>
             </div>
-            <div class="quick-stats"><strong>This month:</strong><span>459</span></div>
-            <div class="quick-stats"><strong>All time:</strong><span>45k</span></div>
-            <div class="quick-stats"><strong>Bounce rate:</strong><span>81.08%</span></div>
-            <div class="quick-stats"><strong>Session duration</strong><span>00:01:41</span></div>
-            <div class="quick-stats"><strong>New session:</strong><span>63.86%</span></div>
+            
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-notification" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-notification" data-slide-to="1"></li>
+              <li data-target="#carousel-notification" data-slide-to="2"></li>
+            </ol>
+
+            <a href="#carousel-notification" class="left carousel-control" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a href="#carousel-notification" class="right carousel-control" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
-
-        <div class="card" id="performance-eval">
-          <div class="card-block">
-            <h2>Performance evaluation</h2>
-            <div class="spider-chart"></div>
-          </div>
-        </div>
-
-        <div class="card" id="ration-stock">
-          <div class="card-block">
-            <h2>Ration stock info</h2>
-            <div class="stacked-area"></div>
-            <div class="switch">
-              View main stock
-              <input type="checkbox" class="switchery" checked>
-              <div class="clearfix"></div>
-            </div>
-            <div class="switch">
-              Hide empty stocks
-              <input type="checkbox" class="switchery">
-              <div class="clearfix"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" id="real-time">
-          <div class="card-block">
-            <h2>Real time information</h2>
-            <ul class="list-unstyled">
-              <li>
-                Active dogs:
-                <span class="label label-warning pull-right">255</span>
-              </li>
-              <li>
-                Silo status:
-                <span class="badge ok pull-right">
-                  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                </span>
-              </li>
-              <li>
-                Usage level:
-                <div class="progress">
-                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
-                    <span class="sr-only">25%</span>
-                  </div>
-                  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
-                    <span class="sr-only">38% allocated</span>
-                  </div>
-                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
-                    <span class="sr-only">5% reserved</span>
-                  </div>
-                </div>
-              </li>
-              <li>
-                Free space:
-                <span id="free-space" class="pull-right"> 32%</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card" id="daily-usage">
-          <div class="card-block">
-            <h2>Daily usage</h2>
-            <div class="area-chart"></div>
-          </div>
-        </div>
-
       </div>
 
 

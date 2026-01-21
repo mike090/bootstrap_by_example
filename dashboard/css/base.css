@@ -38,7 +38,7 @@ nav .top-left-menu {
   color: #fff;
 }
 
-nav .header-refresh {
+nav .header-buttons {
   margin-left: auto;
   color: #fff;
 }
@@ -101,7 +101,8 @@ nav #nav-menu {
   z-index: 99;
 }
 
-#btn-notifications .btn-link {
+#btn-notifications .btn-link,
+#nav-menu li a {
   padding-top: 1.5rem;
   color: #252830;
   font-weight: 500;
@@ -400,4 +401,62 @@ nav #nav-menu {
 /* daily-chart */
 #daily-usage .area-chart {
   height: 200px;
+}
+
+#nav-menu {
+  float: right;
+}
+
+#nav-menu.navbar-collapse {
+  max-height: 39rem;
+}
+
+#nav-menu .divider {
+  height: 0.1rem;
+  margin: 0.9rem 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+@media(max-width:48em){
+  #nav-menu {
+    float: none;
+  }
+
+  form#search {
+    display: none;
+  }
+
+  #nav-menu #btn-notifications > .badge {
+    right: inherit;
+    left: 10rem;
+  }
+
+  #btn-notifications,
+  #btn-notifications > button {
+    width: 100%;
+    text-align: left;
+  }
+
+  #notification-list {
+    margin: 1.25rem;
+    margin-left: 2rem;
+    background-color: #e5e9ec;
+  }
+
+  #notification-list a {
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  .round-chart,
+  .round-chart canvas {
+    display: block;
+    margin: auto;
+  }
+
+  .round-chart + .round-chart {
+    margin-top: 2rem;
+    float: none;
+  }
 }

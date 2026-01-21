@@ -33,7 +33,7 @@ $(document).ready(function() {
     },
     tooltip: {
       shared: true,
-      pointFormat: '<span style="color:{series.color}"> {series.name}: <b>${point.y:,.0f}</b><br>'
+      pointFormat: '<span style="color:{series.color}"> {series.name}: <b>${point.y:,.0f}</b><br/>'
     },
     legend: {
       align: 'right',
@@ -48,7 +48,7 @@ $(document).ready(function() {
       color: '#676f84'
     },
     {
-      name: 'Spend resources',
+      name: 'Spent resources',
       data: [83000, 49000, 60000, 35000, 77000, 90000],
       pointPlacement: 'on',
       color: '#f35958'
@@ -64,7 +64,7 @@ $(document).ready(function() {
   };
   
   elems.forEach(function(el) {
-    var svitchery = new Switchery(el, switcheryOpts);
+    var switchery = new Switchery(el, switcheryOpts);
   });
 
   // ration stock stacked area
@@ -159,7 +159,7 @@ $(document).ready(function() {
     plotOptions: {
       pie: {
         dataLabels: {
-          enables: true,
+          enabled: true,
           style: {
             fontWeight: '300'
           }
@@ -172,10 +172,22 @@ $(document).ready(function() {
       data: [
         ['Front yard', 10.38],
         ['Closet', 26.33],
-        ['Swim pool', 51.03],
+        ['Swin pool', 51.03],
         ['Like a boss', 4.77],
         ['Barking', 3.93]
       ]
     }]
+  });
+
+  $('#search-icon').on('click', function(e) {
+    e.preventDefault();
+    $('form#search').slideToggle('fast');
+    $('form#search input:first').focus();
+  });
+
+  $('form#search input').on('blur', function(e) {
+    if($('#search-icon').is(':visible')) {
+      $('form#search').slideUp('fast');
+    }
   });
 });
